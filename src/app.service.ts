@@ -37,6 +37,20 @@ export class AppService {
     }
 
   }
+  getPerson(): Person {
+    const person = new Person('Влад','Зіменко','20')
+    return person;
+  }}
+  export class Person {
+    firstname: string;
+    lastname: string;
+    years: number;
+    constructor(firstname,lastname,years) {
+      this.firstname = firstname;
+      this.lastname = lastname;
+      this.years = years;
+    }
+  
 
 
 
